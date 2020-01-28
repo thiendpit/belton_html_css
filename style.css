@@ -1,0 +1,104 @@
+* {padding: 0; margin: 0;}
+
+:root {
+    --font1: 'Amiri', serif;
+    --size1: 17px;
+    --color1: #666;
+    --font2: 'Oswald', sans-serif;
+    --size2: 48px;
+    --lineheight2: 59px;
+
+
+}
+
+.banner-top .wrap-top .menu a{
+    color: white;
+    padding: 40px;
+    display: inline-block;
+}
+
+.banner-top {
+    background: url(./fullscreen03.jpg);
+    height: 600px;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    background-attachment: fixed;
+}
+
+.banner-top::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: -webkit-linear-gradient(left, #1e1d1d80 0%, #39393d26 50% , #0000004d 100%)
+}
+
+.banner-top .wrap-top {
+    display: flex;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.banner-top .wrap-top .logo-belton {
+    flex-grow: 2;
+    text-align: center;
+    padding: 40px;
+}
+
+.banner-top .wrap-top .logo-belton img {
+    height: 40px;
+}
+
+.banner-top .wrap-top .logo-social a {
+    color: rgb(255, 255, 255);
+    padding: 10px;
+}
+
+.banner-top .wrap-top .logo-social {
+    padding:  40px;
+    display: inline-block;
+}
+
+.text-banner-top {
+    position: absolute;
+    width: 100%;
+    top: 30%;
+    color: white;
+}
+
+.text-banner-top .content {
+    width: 1170px;
+    margin: auto;
+    
+}
+
+.text-banner-top .content h1 {
+    font-family: var(--font2);
+    font-size: var(--size2);
+    line-height: var(--lineheight2);
+    color: white;
+    width: 50%;
+}
+
+/* end css top */
+
+.content1 {
+    width: 1170px;
+    margin: auto;
+    padding: 80px 0;
+    display: flex;
+    font-family: var(--font1);
+    font-size: var(--size1);
+    color: var(--color1);
+}
+.content1 .left {
+    width: 35%;
+}
+.content1 .left  span{}
+.content1 .left  h2{}
+.content1 .right {
+    width: 65%;
+}
+.content1 .right p{}
